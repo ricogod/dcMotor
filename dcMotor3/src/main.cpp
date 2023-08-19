@@ -24,7 +24,7 @@ volatile long currentPos = 0;
 int rot = 0;
 float oldRotSpeed = 0;
 
- int motorSpeed = 0; // Adjust this value for the desired speed (0-255)
+ int motorSpeed = 0; 
 
 
 void setup() {
@@ -87,7 +87,7 @@ void changeSpeed(){
 }
 
 void loop() {
-  // Run the motor clockwise
+  
   
   analogWrite(Enable, motorSpeed);
   digitalWrite(motorPin1, LOW);
